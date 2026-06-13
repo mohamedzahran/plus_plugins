@@ -1,5 +1,4 @@
-// لا تضع بلوك buildscript أو plugins هنا لكي لا تتعارض مع المشروع الرئيسي
-
+// 1. شيل أي plugins ليها علاقة بالـ version عشان ميعملش conflict
 apply plugin: 'com.android.library'
 apply plugin: 'org.jetbrains.kotlin.android'
 
