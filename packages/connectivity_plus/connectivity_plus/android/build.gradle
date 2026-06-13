@@ -1,26 +1,8 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        // تحديث نسخة الـ Gradle Plugin لضمان التوافق
-        classpath 'com.android.tools.build:gradle:8.7.2'
-    }
-}
+// لا تضع بلوك buildscript ولا plugins هنا
+// اترك إدارة الـ versions لمشروع Flutter الأساسي
 
-// استخدام تعريف الـ plugins الحديث بدلاً من apply plugin القديم
-plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android' version '2.0.0' apply false
-}
-
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     namespace 'dev.fluttercommunity.plus.connectivity'
@@ -33,7 +15,6 @@ android {
 
     defaultConfig {
         minSdk 21
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     lint {
