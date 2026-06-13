@@ -1,5 +1,4 @@
-// لا تضع بلوك buildscript ولا plugins هنا
-// اترك إدارة الـ versions لمشروع Flutter الأساسي
+// لا تضع بلوك buildscript أو plugins هنا لكي لا تتعارض مع المشروع الرئيسي
 
 apply plugin: 'com.android.library'
 apply plugin: 'org.jetbrains.kotlin.android'
